@@ -1,0 +1,131 @@
+body {
+    background-color: black;
+    color: #00FF00; /* Green text color */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font */
+    margin: 0;
+    padding: 20px; /* Add some padding for better readability */
+}
+
+nav {
+    text-align: left;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: block; /* Display as block to mimic CLI commands */
+    margin-bottom: 5px;
+}
+
+nav a {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #42B124;
+}
+
+header, section, footer {
+    margin-bottom: 20px;
+}
+
+header h1, section h2 {
+    color: #00FF00;
+}
+
+header h1 {
+    margin-bottom: -15px;
+}
+
+.watermark {
+    position: absolute;
+    color: #00FF00;
+    opacity: 0.1;
+    font-size: 30px;
+    top: 38%;
+    left: 48%;
+}
+
+section p, section ul {
+    margin-left: 20px; /* Indent to mimic CLI output */
+}
+
+footer p {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#cli-section {
+    margin-top: 20px;
+}
+
+.command-line {
+    display: flex;
+    align-items: center;
+}
+
+.command-line label {
+    margin-right: 5px; /* Add some space between the label and input */
+}
+
+#command-input {
+    background-color: black;
+    color: #00FF00;
+    border: none;
+    outline: none;
+    flex-grow: 1; /* Allow the input to take up remaining space */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+#output {
+    white-space: pre-wrap; /* Preserve whitespace formatting */
+    margin-bottom: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    border-top: 1px solid #00FF00;
+}
+
+footer p {
+    padding-left: 50%;
+}
+
+footer a {
+    color: #00FF00;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+footer a:hover {
+    color: #42B124;
+}
+
+.github-icon {
+    color: #00FF00; /* Green color for the icon */
+    margin-right: 5px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
